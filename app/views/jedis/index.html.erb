@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jedis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jedis.each do |jedi| %>
+      <tr>
+        <td><%= jedi.name %></td>
+        <td><%= link_to 'Show', jedi %></td>
+        <td><%= link_to 'Edit', edit_jedi_path(jedi) %></td>
+        <td><%= link_to 'Destroy', jedi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jedi', new_jedi_path %>
