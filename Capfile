@@ -7,7 +7,6 @@ require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/rvm'
 require 'capistrano/puma'
-require 'whenever/capistrano'
 require 'capistrano/delayed_job'
 # Include tasks from other gems included in your Gemfile
 #
